@@ -2,7 +2,8 @@ use inc::Module::Install;
 name 'XML-Feed-Deduped';
 all_from 'lib/XML/Feed/Deduped.pm';
 
-# requires '';
+requires 'Any::Moose' => 0.06;
+requires 'XML::Feed'  => 0.41;
 
 tests 't/*.t';
 author_tests 'xt';
