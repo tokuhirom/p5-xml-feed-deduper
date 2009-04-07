@@ -43,7 +43,7 @@ sub add {
 sub _digest {
     my $entry = shift;
     my $content = ($entry->title||'') . ($entry->content||'');
-    utf8::downgrade($content);
+    utf8::encode($content) if utf8::is_utf8($content);
     my $digest = Digest::MD5::md5_hex($content);
     return $digest;
 }
