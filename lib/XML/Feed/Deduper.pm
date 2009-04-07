@@ -1,4 +1,4 @@
-package XML::Feed::Deduped;
+package XML::Feed::Deduper;
 use Any::Moose;
 use XML::Feed;
 our $VERSION = '0.01';
@@ -31,14 +31,14 @@ __END__
 
 =head1 NAME
 
-XML::Feed::Deduped - dedup entries from feed
+XML::Feed::Deduper - remove duplicated entries from feed
 
 =head1 SYNOPSIS
 
     use XML::Feed;
-    use XML::Feed::Deduped;
+    use XML::Feed::Deduper;
     my $feed = XML::Feed->parse($content);
-    my $deduper = XML::Feed::Deduped->new(
+    my $deduper = XML::Feed::Deduper->new(
         path => '/tmp/foo.db',
     );
     for my $entry ($deduper->dedup($feed->entries)) {
@@ -47,11 +47,11 @@ XML::Feed::Deduped - dedup entries from feed
 
 =head1 DESCRIPTION
 
-XML::Feed::Deduped is deduper for XML::Feed.
+XML::Feed::Deduper is deduper for XML::Feed.
 
-You can easy to write the aggregator more easily :)
+You can write the aggregator more easily :)
 
-The concept is stolen from L<Plagger::Rule::Deduped>.
+The concept is stolen from L<Plagger::Rule::Deduper>.
 
 Enjoy!
 
@@ -67,7 +67,7 @@ Tokuhiro Matsuno E<lt>tokuhirom  slkjfd gmail.comE<gt>
 
 =head1 SEE ALSO
 
-L<Plagger::Rule::Deduped>
+L<Plagger::Rule::Deduper>
 
 =head1 LICENSE
 

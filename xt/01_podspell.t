@@ -7,4 +7,7 @@ all_pod_files_spelling_ok('lib');
 __DATA__
 Tokuhiro Matsuno
 tokuhirom  slkjfd gmail.com
-XML::Feed::Deduped
+XML::Feed::Deduper
+aggregator
+dedup
+deduper

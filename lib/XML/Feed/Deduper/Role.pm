@@ -1,4 +1,4 @@
-package XML::Feed::Deduped::Role;
+package XML::Feed::Deduper::Role;
 use Any::Moose '::Role';
 use Digest::MD5 ();
 

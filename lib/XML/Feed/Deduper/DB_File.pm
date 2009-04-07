@@ -1,6 +1,6 @@
-package XML::Feed::Deduped::DB_File;
+package XML::Feed::Deduper::DB_File;
 use Any::Moose;
-with 'XML::Feed::Deduped::Role';
+with 'XML::Feed::Deduper::Role';
 use DB_File;
 
 has path => (

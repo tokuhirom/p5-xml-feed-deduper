@@ -1,11 +1,11 @@
-This is Perl module XML::Feed::Deduped.
+This is Perl module XML::Feed::Deduper.
 
 INSTALLATION
 
-XML::Feed::Deduped installation is straightforward. If your CPAN shell is set up,
+XML::Feed::Deduper installation is straightforward. If your CPAN shell is set up,
 you should just be able to do
 
-    % cpan XML::Feed::Deduped
+    % cpan XML::Feed::Deduper
 
 Download it, unpack it, then build it as per the usual:
 
@@ -18,9 +18,9 @@ Then install it:
 
 DOCUMENTATION
 
-XML::Feed::Deduped documentation is available as in POD. So you can do:
+XML::Feed::Deduper documentation is available as in POD. So you can do:
 
-    % perldoc XML::Feed::Deduped
+    % perldoc XML::Feed::Deduper
 
 to read the documentation online with your favorite pager.
 

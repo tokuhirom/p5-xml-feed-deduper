@@ -1,14 +1,14 @@
 use strict;
 use warnings;
 use Test::More tests => 2;
-use XML::Feed::Deduped;
+use XML::Feed::Deduper;
 use File::Temp;
 use FindBin;
 use URI;
 
 my $tmp = File::Temp->new(UNLINK => 1);
 
-my $deduper = XML::Feed::Deduped->new(
+my $deduper = XML::Feed::Deduper->new(
     path => $tmp->filename,
     compare_body => 1,
 );
