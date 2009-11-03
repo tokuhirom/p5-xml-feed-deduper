@@ -2,7 +2,7 @@ use inc::Module::Install;
 name 'XML-Feed-Deduper';
 all_from 'lib/XML/Feed/Deduper.pm';
 
-requires 'Any::Moose' => 0.06;
+requires 'Any::Moose' => 0.10;
 requires 'XML::Feed'  => 0.41;
 requires 'DB_File';
 
