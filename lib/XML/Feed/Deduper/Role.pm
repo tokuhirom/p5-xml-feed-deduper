@@ -49,3 +49,4 @@ sub _digest {
 }
 
 no Any::Moose '::Role';
+1;
