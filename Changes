@@ -1,5 +1,11 @@
 Revision history for Perl extension XML::Feed::Deduper
 
+0.03
+
+        - hmm... In some environment, no Any::Moose '::Role'; doesn't return true value.
+          (Yes, I know this is not a problem about A::M)
+        - specify depended perl version
+
 0.02
 
         - fixed deps
