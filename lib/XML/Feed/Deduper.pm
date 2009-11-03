@@ -1,7 +1,7 @@
 package XML::Feed::Deduper;
 use Any::Moose;
 use XML::Feed;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub BUILD {
     my ($self, $args) = @_;
