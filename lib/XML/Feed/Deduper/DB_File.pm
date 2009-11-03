@@ -11,11 +11,12 @@ has path => (
 
 has db => (
     is => 'rw',
-    isa => 'HashRef',
+    isa => 'DB_File',
     lazy => 1,
     default => sub {
         my $self = shift;
-        tie my %cache, 'DB_File', $self->path, O_RDWR|O_CREAT, 0666, $DB_HASH or die "cannot open @{[ $self->path ]}";
+        my $obj = tie my %cache, 'DB_File', $self->path, O_RDWR|O_CREAT, 0666, $DB_HASH or die "cannot open @{[ $self->path ]}";
+        $obj;
     }
 );
 
