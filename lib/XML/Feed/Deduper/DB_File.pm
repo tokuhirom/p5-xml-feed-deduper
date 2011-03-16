@@ -32,6 +32,7 @@ sub find_entry {
 sub create_entry {
     my ( $self, $id, $digest ) = @_;
     $self->db->put( $id, $digest );
+    $self->db->sync;
 }
 
 no Any::Moose;
