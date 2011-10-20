@@ -1,4 +1,6 @@
 package XML::Feed::Deduper;
+use strict;
+use warnings;
 use Any::Moose;
 use XML::Feed;
 our $VERSION = '0.02';
@@ -63,7 +65,7 @@ your base are belongs to us!
 
 =head1 AUTHOR
 
-Tokuhiro Matsuno E<lt>tokuhirom  slkjfd gmail.comE<gt>
+Tokuhiro Matsuno E<lt>tokuhirom  slkjfd@ gmail.comE<gt>
 
 =head1 SEE ALSO
 

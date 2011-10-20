@@ -1,4 +1,6 @@
 package XML::Feed::Deduper::DB_File;
+use strict;
+use warnings;
 use Any::Moose;
 with 'XML::Feed::Deduper::Role';
 use DB_File;
@@ -15,6 +17,7 @@ has db => (
     lazy => 1,
     default => sub {
         my $self = shift;
+        ## no critic.
         my $obj = tie my %cache, 'DB_File', $self->path, O_RDWR|O_CREAT, 0666, $DB_HASH or die "cannot open @{[ $self->path ]}";
         $obj;
     }

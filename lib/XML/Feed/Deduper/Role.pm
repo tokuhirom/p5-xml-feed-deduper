@@ -1,4 +1,6 @@
 package XML::Feed::Deduper::Role;
+use strict;
+use warnings;
 use Any::Moose '::Role';
 use Digest::MD5 ();
 
