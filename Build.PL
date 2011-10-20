@@ -9,7 +9,6 @@ my $build = Module::Build->new(
     build_requires       => {},
     configure_requires   => { 'Module::Build' => '0.38' },
     requires             => {
-        'Filter::Util::Call' => '0',
         'XML::Feed'          => '0.41',
         'Any::Moose'         => '0.1',
         'DB_File'            => '0'
