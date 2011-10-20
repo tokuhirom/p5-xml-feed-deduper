@@ -1,5 +1,9 @@
 Revision history for Perl extension XML::Feed::Deduper
 
+0.04
+
+    - modernize packaging
+
 0.03
         - sync to file immediately
 

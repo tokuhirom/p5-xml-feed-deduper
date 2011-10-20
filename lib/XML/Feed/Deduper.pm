@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Any::Moose;
 use XML::Feed;
-our $VERSION = '0.02';
+our $VERSION = '0.04';
 
 sub BUILD {
     my ($self, $args) = @_;
