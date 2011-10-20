@@ -9,9 +9,10 @@ my $build = Module::Build->new(
     build_requires       => {},
     configure_requires   => { 'Module::Build' => '0.38' },
     requires             => {
-        'XML::Feed'          => '0.41',
-        'Any::Moose'         => '0.1',
-        'DB_File'            => '0'
+        'XML::Feed'  => '0.41',
+        'Any::Moose' => '0.1',
+        'DB_File'    => '0',
+        'perl'       => '5.8.8',
     },
     no_index    => { 'directory' => [ 'inc', 't', 'xt' ] },
     name        => 'XML-Feed-Deduper',
