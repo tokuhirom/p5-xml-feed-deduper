@@ -3,8 +3,8 @@ use strict;
 use warnings;
 use Any::Moose;
 use XML::Feed;
-use 5.008001;
-our $VERSION = '0.04';
+use 5.008008;
+our $VERSION = '0.05';
 
 sub BUILD {
     my ($self, $args) = @_;

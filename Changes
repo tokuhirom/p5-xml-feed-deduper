@@ -1,5 +1,9 @@
 Revision history for Perl extension XML::Feed::Deduper
 
+0.05
+
+    - depend to perl 5.8.8
+
 0.04
 
     - modernize packaging
