@@ -28,3 +28,4 @@ XML-Feed-Deduper-*/
 !Build/
 !META.json
 !LICENSE
+/.perl-version
