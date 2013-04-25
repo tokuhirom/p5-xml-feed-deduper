@@ -18,7 +18,13 @@ xshelper.h
 tags
 blib/
 MYMETA.*
-META.json
 README
 ^inc/
 XML-Feed-Deduper-*/
+/XML-Feed-Deduper-*
+/.build
+/_build_params
+/Build
+!Build/
+!META.json
+!LICENSE

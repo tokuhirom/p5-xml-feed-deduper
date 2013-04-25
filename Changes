@@ -1,5 +1,7 @@
 Revision history for Perl extension XML::Feed::Deduper
 
+{{$NEXT}}
+
 0.05
 
     - depend to perl 5.8.8

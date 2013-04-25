@@ -1,0 +1,77 @@
+{
+   "abstract" : "remove duplicated entries from feed",
+   "author" : [
+      "Tokuhiro Matsuno <tokuhirom  slkjfd@ gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v0.0.56, CPAN::Meta::Converter version 2.130880",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "XML-Feed-Deduper",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
+            "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.0.16"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Any::Moose" : "0.1",
+            "DB_File" : "0",
+            "Digest::MD5" : "0",
+            "XML::Feed" : "0.41",
+            "perl" : "5.008008"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Temp" : "0",
+            "Test::More" : "0.98",
+            "URI" : "0"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/tokuhirom/p5-xml-feed-deduper/issues"
+      },
+      "homepage" : "https://github.com/tokuhirom/p5-xml-feed-deduper",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/tokuhirom/p5-xml-feed-deduper.git",
+         "web" : "https://github.com/tokuhirom/p5-xml-feed-deduper"
+      }
+   },
+   "version" : "0.05",
+   "x_contributors" : [
+      "mattn <mattn.jp@gmail.com>",
+      "Tokuhiro Matsuno <tokuhirom@gmail.com>"
+   ]
+}
