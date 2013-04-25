@@ -1,10 +1,10 @@
 {
    "abstract" : "remove duplicated entries from feed",
    "author" : [
-      "Tokuhiro Matsuno <tokuhirom  slkjfd@ gmail.com>"
+      "Tokuhiro Matsuno <tokuhirom@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.0.56, CPAN::Meta::Converter version 2.130880",
+   "generated_by" : "Minilla/v0.0.56, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -71,7 +71,6 @@
    },
    "version" : "0.05",
    "x_contributors" : [
-      "mattn <mattn.jp@gmail.com>",
-      "Tokuhiro Matsuno <tokuhirom@gmail.com>"
+      "mattn <mattn.jp@gmail.com>"
    ]
 }

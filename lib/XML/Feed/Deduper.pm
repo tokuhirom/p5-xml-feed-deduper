@@ -32,6 +32,10 @@ no Any::Moose;
 __PACKAGE__->meta->make_immutable;
 __END__
 
+=encoding utf-8
+
+=for stopwords deduper
+
 =head1 NAME
 
 XML::Feed::Deduper - remove duplicated entries from feed
@@ -66,7 +70,7 @@ your base are belongs to us!
 
 =head1 AUTHOR
 
-Tokuhiro Matsuno E<lt>tokuhirom  slkjfd@ gmail.comE<gt>
+Tokuhiro Matsuno E<lt>tokuhirom@gmail.comE<gt>
 
 =head1 SEE ALSO
 

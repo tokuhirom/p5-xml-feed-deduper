@@ -32,7 +32,7 @@ your base are belongs to us!
 
 # AUTHOR
 
-Tokuhiro Matsuno <tokuhirom  slkjfd@ gmail.com>
+Tokuhiro Matsuno <tokuhirom@gmail.com>
 
 # SEE ALSO
 
