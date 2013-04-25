@@ -1,8 +1,10 @@
 package XML::Feed::Deduper::Role;
 use strict;
 use warnings;
-use Any::Moose '::Role';
+
 use Digest::MD5 ();
+
+use Mouse::Role;
 
 has compare_body => (
     is      => 'ro',
@@ -14,6 +16,8 @@ has compare_body => (
 requires 'find_entry';
 # $engine->create_entry($id, $digest) => undef
 requires 'create_entry';
+
+no Mouse::Role;
 
 sub id_for {
     my ($self, $entry) = @_;
@@ -50,5 +54,4 @@ sub _digest {
     return $digest;
 }
 
-no Any::Moose '::Role';
 1;

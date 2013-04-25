@@ -1,6 +1,6 @@
 requires 'perl', 'v5.8.8';
 
-requires 'Any::Moose', '0.1';
+requires 'Mouse', '1.08';
 requires 'DB_File';
 requires 'XML::Feed', '0.41';
 requires 'Digest::MD5';

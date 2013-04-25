@@ -1,7 +1,7 @@
 package XML::Feed::Deduper::DB_File;
 use strict;
 use warnings;
-use Any::Moose;
+use Mouse;
 with 'XML::Feed::Deduper::Role';
 use DB_File;
 
@@ -23,6 +23,8 @@ has db => (
     }
 );
 
+no Mouse;
+
 sub find_entry {
     my ( $self, $url ) = @_;
 
@@ -38,5 +40,4 @@ sub create_entry {
     $self->db->sync;
 }
 
-no Any::Moose;
-__PACKAGE__->meta->make_immutable;
+1;

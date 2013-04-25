@@ -1,16 +1,21 @@
 package XML::Feed::Deduper;
 use strict;
 use warnings;
-use Any::Moose;
-use XML::Feed;
 use 5.008008;
+
 our $VERSION = '0.05';
+
+use XML::Feed;
+
+use Mouse;
+
+no Mouse;
 
 sub BUILD {
     my ($self, $args) = @_;
     my $engine = delete $args->{engine} || 'DB_File';
     $engine = $engine =~ s/^\+// ? $engine : "@{[ __PACKAGE__ ]}::${engine}";
-    Any::Moose::load_class($engine);
+    Mouse::Util::load_class($engine);
     my $instance = $engine->new($args) or die 'wtf?';
     $self->{engine} = $instance;
 }
@@ -28,8 +33,6 @@ sub dedup {
     return @res;
 }
 
-no Any::Moose;
-__PACKAGE__->meta->make_immutable;
 __END__
 
 =encoding utf-8

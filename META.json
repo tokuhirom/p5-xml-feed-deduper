@@ -42,9 +42,9 @@
       },
       "runtime" : {
          "requires" : {
-            "Any::Moose" : "0.1",
             "DB_File" : "0",
             "Digest::MD5" : "0",
+            "Mouse" : "1.08",
             "XML::Feed" : "0.41",
             "perl" : "5.008008"
          }
