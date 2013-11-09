@@ -1,4 +1,4 @@
-Revision history for Perl extension XML::Feed::Deduper
+Revision history for Perl module XML::Feed::Deduper
 
 {{$NEXT}}
 
@@ -6,19 +6,23 @@ Revision history for Perl extension XML::Feed::Deduper
 
     - Move to Mouse
 
-0.05
+0.05 2011-10-20
 
-    - depend to perl 5.8.8
+    - depend on perl 5.8.8
 
-0.04
+0.04 not released
 
     - modernize packaging
 
-0.03
-        - sync to file immediately
+0.03 2009-11-03
 
-0.02
-        - fixed deps
+    - sync to file immediately
 
-0.01    Tue Apr  7 12:02:11 2009
-        - original version
+0.02 2009-07-02
+
+    - fixed deps
+
+0.01 2009-04-15
+
+    - original version
+
