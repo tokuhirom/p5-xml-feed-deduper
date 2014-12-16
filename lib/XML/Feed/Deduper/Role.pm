@@ -21,7 +21,9 @@ no Mouse::Role;
 
 sub id_for {
     my ($self, $entry) = @_;
-    if ($entry->modified) {
+    if ($entry->can('id')) {
+        return $entry->id;
+	} elsif ($entry->modified) {
         return join ":", $entry->link, $entry->modified;
     } else {
         return $entry->link;
