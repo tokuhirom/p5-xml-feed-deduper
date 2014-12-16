@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Test::More tests => 2;
+use Test::More tests => 4;
 use XML::Feed::Deduper;
 use File::Temp;
 use FindBin;
@@ -25,5 +25,19 @@ my $deduper = XML::Feed::Deduper->new(
     or die XML::Feed->errstr;
     my @entries = $deduper->dedup($feed->entries);
     is(join(' ', map { $_->link } @entries), 'http://example.com/entry/1 http://example.com/entry/2');
+}
+
+{
+    my $feed = XML::Feed->parse( URI->new("file://$FindBin::Bin/samples/03.rss") )
+    or die XML::Feed->errstr;
+    my @entries = $deduper->dedup($feed->entries);
+    is(join(' ', map { $_->link } @entries), 'http://example.com/entry/1 http://example.com/entry/2');
+}
+
+{
+    my $feed = XML::Feed->parse( URI->new("file://$FindBin::Bin/samples/04.rss") )
+    or die XML::Feed->errstr;
+    my @entries = $deduper->dedup($feed->entries);
+    is(join(' ', map { $_->link } @entries), 'http://example.com/entry/3');
 }
 

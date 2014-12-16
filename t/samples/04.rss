@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+<channel>
+<title>feed title</title>
+<link>http://example.com/</link>
+<description>oeoeoe</description>
+<pubDate>Tue, 10 Jun 2003 04:00:00 GMT</pubDate>
+<item>
+    <id>222</id>
+    <title>test3</title>
+    <link>http://example.com/entry/3</link>
+    <description>descdesc</description>
+</item>
+</channel>
+</rss>
