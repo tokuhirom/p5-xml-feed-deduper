@@ -12,6 +12,12 @@ has compare_body => (
     default => 0,
 );
 
+has ignore_id => (
+    is      => 'ro',
+    isa     => 'Int',
+    default => 0,
+);
+
 # $engine->find_entry($id) => md5hash
 requires 'find_entry';
 # $engine->create_entry($id, $digest) => undef
@@ -21,7 +27,7 @@ no Mouse::Role;
 
 sub id_for {
     my ($self, $entry) = @_;
-    if ($entry->can('id')) {
+    if ($entry->can('id') && !$self->ignore_id) {
         return $entry->id;
 	} elsif ($entry->modified) {
         return join ":", $entry->link, $entry->modified;
