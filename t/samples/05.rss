@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+<channel>
+<title>feed title</title>
+<link>http://example.com/</link>
+<description>oeoeoe</description>
+<pubDate>Tue, 10 Jun 2003 04:00:00 GMT</pubDate>
+<item>
+    <id>111</id>
+    <title>test5</title>
+    <published>2016-10-27T09:53:22+09:00</published>
+    <updated>2016-10-27T10:36:40+09:00</updated>
+    <link>http://example.com/entry/1</link>
+    <description>descdesc</description>
+</item>
+<item>
+    <id>222</id>
+    <title>test6</title>
+    <published>2016-10-27T10:53:22+09:00</published>
+    <updated>2016-10-27T12:36:40+09:00</updated>
+    <link>http://example.com/entry/1</link>
+    <pubdate>http://example.com/entry/1</pubdate>
+    <description>descdesc</description>
+</item>
+</channel>
+</rss>
